@@ -1,0 +1,24 @@
+# ==== LoRA ====
+lora_r: 8
+lora_alpha: 16
+lora_dropout: 0.05
+target_modules: ["q_proj","k_proj","v_proj","o_proj","gate_proj","up_proj","down_proj"]
+
+# ==== Training ====
+batch_size: 1         # micro-batch size per GPU
+grad_accum: 8         # effective batch = 8
+lr: 2.0e-4
+epochs: 10             # train for 3 full passes
+max_steps: -1         # IMPORTANT: -1 = no cap; use epochs
+cutoff_len: 1024
+warmup_ratio: 0.03
+weight_decay: 0.0
+
+# ==== Precision ====
+use_bf16: true
+use_tf32: true
+
+# ==== QLoRA (disabled) ====
+bnb_4bit: false
+bnb_compute_dtype: "bfloat16"
+bnb_quant_type: "nf4"

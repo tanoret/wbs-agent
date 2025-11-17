@@ -1,0 +1,224 @@
+version: "2025-11-13"
+publisher_priority: [NRC, eCFR, govinfo, IAEA]
+documents:
+  # ---------- CFR: Part 50 and key sections ----------
+  - id: cfr-10-part50-full
+    title: "10 CFR Part 50 — Domestic Licensing of Production and Utilization Facilities (full text)"
+    type: cfr
+    format: html
+    url: https://www.nrc.gov/reading-rm/doc-collections/cfr/part050/full-text
+    mirrors:
+      - https://www.law.cornell.edu/cfr/text/10/part-50
+      - https://ecfr.io/Title-10/Part-50
+    filename: cfr_10_part50_full.html
+
+  - id: cfr-10-50-36
+    title: "10 CFR §50.36 — Technical specifications"
+    type: cfr
+    format: html
+    url: https://www.nrc.gov/reading-rm/doc-collections/cfr/part050/part050-0036
+    mirrors:
+      - https://www.law.cornell.edu/cfr/text/10/50.36
+      - https://www.ecfr.gov/current/title-10/chapter-I/part-50/section-50.36
+    filename: cfr_10_50_36.html
+
+  - id: cfr-10-50-55a
+    title: "10 CFR §50.55a — Codes and standards (ASME, etc.)"
+    type: cfr
+    format: html
+    url: https://www.law.cornell.edu/cfr/text/10/50.55a
+    mirrors:
+      - https://www.nrc.gov/reading-rm/doc-collections/cfr/part050/part050-0055a
+    filename: cfr_10_50_55a.html
+
+  - id: cfr-10-50-app-a
+    title: "10 CFR Part 50 Appendix A — General Design Criteria"
+    type: cfr
+    format: html
+    url: https://www.law.cornell.edu/cfr/text/10/appendix-A_to_part_50
+    mirrors:
+      - https://www.nrc.gov/reading-rm/doc-collections/cfr/part050/part050-appa
+    filename: cfr_10_part50_appendixA.html
+
+  - id: cfr-10-50-app-b
+    title: "10 CFR Part 50 Appendix B — Quality Assurance Criteria"
+    type: cfr
+    format: html
+    url: https://www.law.cornell.edu/cfr/text/10/appendix-B_to_part_50
+    mirrors:
+      - https://www.ecfr.gov/current/title-10/chapter-I/part-50/appendix-Appendix%20B%20to%20Part%2050
+    filename: cfr_10_part50_appendixB.html
+
+  - id: cfr-10-50-app-s
+    title: "10 CFR Part 50 Appendix S — Earthquake Engineering Criteria"
+    type: cfr
+    format: html
+    url: https://www.nrc.gov/reading-rm/doc-collections/cfr/part050/part050-apps
+    mirrors:
+      - https://www.law.cornell.edu/cfr/text/10/appendix-S_to_part_50
+    filename: cfr_10_part50_appendixS.html
+
+  - id: cfr-10-50-47
+    title: "10 CFR §50.47 — Emergency plans"
+    type: cfr
+    format: html
+    url: https://www.nrc.gov/reading-rm/doc-collections/cfr/part050/part050-0047
+    mirrors:
+      - https://www.law.cornell.edu/cfr/text/10/50.47
+    filename: cfr_10_50_47.html
+
+  # ---------- Other CFR parts commonly needed in reactor design ----------
+  - id: cfr-10-part52
+    title: "10 CFR Part 52 — Licenses, Certifications, and Approvals for Nuclear Power Plants"
+    type: cfr
+    format: html
+    url: https://www.nrc.gov/reading-rm/doc-collections/cfr/part052/index
+    mirrors:
+      - https://www.law.cornell.edu/cfr/text/10/part-52
+      - https://www.ecfr.gov/current/title-10/chapter-I/part-52
+    filename: cfr_10_part52.html
+
+  - id: cfr-10-part100
+    title: "10 CFR Part 100 — Reactor Site Criteria"
+    type: cfr
+    format: html
+    url: https://www.nrc.gov/reading-rm/doc-collections/cfr/part100/index
+    mirrors:
+      - https://www.law.cornell.edu/cfr/text/10/part-100
+      - https://www.ecfr.gov/current/title-10/chapter-I/part-100
+    filename: cfr_10_part100.html
+
+  - id: cfr-10-part51
+    title: "10 CFR Part 51 — Environmental Protection Regulations for Domestic Licensing"
+    type: cfr
+    format: html
+    url: https://www.nrc.gov/reading-rm/doc-collections/cfr/part051/index
+    mirrors:
+      - https://www.law.cornell.edu/cfr/text/10/part-51
+      - https://www.ecfr.gov/current/title-10/chapter-I/part-51
+    filename: cfr_10_part51.html
+
+  - id: cfr-10-part20
+    title: "10 CFR Part 20 — Standards for Protection Against Radiation"
+    type: cfr
+    format: html
+    url: https://www.law.cornell.edu/cfr/text/10/part-20
+    mirrors:
+      - https://www.ecfr.gov/current/title-10/chapter-I/part-20
+    filename: cfr_10_part20.html
+
+  - id: cfr-10-73-54
+    title: "10 CFR §73.54 — Protection of digital computer and communication systems and networks"
+    type: cfr
+    format: pdf
+    url: https://www.govinfo.gov/content/pkg/CFR-2025-title10-vol2/pdf/CFR-2025-title10-vol2-sec73-54.pdf
+    mirrors:
+      - https://www.nrc.gov/reading-rm/doc-collections/cfr/part073/part073-0054
+      - https://www.law.cornell.edu/cfr/text/10/73.54
+      - https://ecfr.io/Title-10/Section-73.54
+    filename: cfr_10_73_54.pdf
+
+  # ---------- NRC Regulatory Guides (direct ADAMS PDFs) ----------
+  - id: rg-1-26-rev6
+    title: "RG 1.26 Rev. 6 — Quality Group Classifications and Standards..."
+    type: regulatory_guide
+    format: pdf
+    url: https://www.nrc.gov/docs/ML2123/ML21232A142.pdf
+    mirrors:
+      - https://www.nrc.gov/docs/ML2131/ML21319A023.pdf
+    filename: RG-1.26-Rev6.pdf
+
+  - id: rg-1-29-rev6
+    title: "RG 1.29 Rev. 6 — Seismic Design Classification for Nuclear Power Plants"
+    type: regulatory_guide
+    format: pdf
+    url: https://www.nrc.gov/docs/ML2115/ML21155A003.pdf
+    mirrors:
+      - https://www.nrc.gov/docs/ML2115/ML21155A002.html
+    filename: RG-1.29-Rev6.pdf
+
+  - id: rg-1-28-rev6
+    title: "RG 1.28 Rev. 6 — Quality Assurance Program Criteria (Design and Construction)"
+    type: regulatory_guide
+    format: pdf
+    url: https://www.nrc.gov/docs/ML2317/ML23177A002.pdf
+    mirrors: []
+    filename: RG-1.28-Rev6.pdf
+
+  - id: rg-1-105-rev4
+    title: "RG 1.105 Rev. 4 — Setpoints for Safety-Related Instrumentation"
+    type: regulatory_guide
+    format: pdf
+    url: https://www.nrc.gov/docs/ML1703/ML17032A454.pdf
+    mirrors: []
+    filename: RG-1.105-Rev4.pdf
+
+  - id: rg-1-97-rev5
+    title: "RG 1.97 Rev. 5 — Criteria for Accident Monitoring Instrumentation"
+    type: regulatory_guide
+    format: pdf
+    url: https://www.nrc.gov/docs/ML1410/ML14100A602.pdf
+    mirrors: []
+    filename: RG-1.97-Rev5.pdf
+
+  - id: rg-1-189-rev5
+    title: "RG 1.189 Rev. 5 — Fire Protection for NPPs"
+    type: regulatory_guide
+    format: pdf
+    url: https://www.nrc.gov/docs/ML2108/ML21083A001.pdf
+    mirrors: []
+    filename: RG-1.189-Rev5.pdf
+
+  - id: rg-1-183-rev1
+    title: "RG 1.183 Rev. 1 — Alternative Radiological Source Terms for LWR DBAs"
+    type: regulatory_guide
+    format: pdf
+    url: https://www.nrc.gov/docs/ML2308/ML23082A305.pdf
+    mirrors: []
+    filename: RG-1.183-Rev1.pdf
+
+  - id: rg-1-142-rev3
+    title: "RG 1.142 Rev. 3 — Safety-Related Concrete Structures (other than vessels and containments)"
+    type: regulatory_guide
+    format: pdf
+    url: https://www.nrc.gov/docs/ML2014/ML20141L613.pdf
+    mirrors: []
+    filename: RG-1.142-Rev3.pdf
+
+  - id: rg-1-199-rev1
+    title: "RG 1.199 Rev. 1 — Anchoring Components and Structural Supports in Concrete"
+    type: regulatory_guide
+    format: pdf
+    url: https://www.nrc.gov/docs/ML1933/ML19336A079.pdf
+    mirrors:
+      - https://www.govinfo.gov/content/pkg/FR-2020-04-09/pdf/2020-07417.pdf
+    filename: RG-1.199-Rev1.pdf
+
+  - id: rg-5-71-rev1
+    title: "RG 5.71 Rev. 1 — Cyber Security Program for Nuclear Facilities"
+    type: regulatory_guide
+    format: pdf
+    url: https://ww2.nrc.gov/docs/ML2225/ML22258A204.pdf
+    mirrors:
+      - https://www.nrc.gov/docs/ML0903/ML090340159.pdf
+    filename: RG-5.71-Rev1.pdf
+
+  - id: rg-1-206-rev1
+    title: "RG 1.206 Rev. 1 — Applications for Nuclear Power Plants (10 CFR Part 52)"
+    type: regulatory_guide
+    format: pdf
+    url: https://www.nrc.gov/docs/ML1813/ML18131A181.pdf
+    mirrors:
+      - https://www.nrc.gov/reading-rm/doc-collections/reg-guides/power-reactors/rg/01-206/index
+    filename: RG-1.206-Rev1.pdf
+
+  # ---------- NUREG-0800 (SRP) ----------
+  - id: nureg-0800-index
+    title: "NUREG-0800 — Standard Review Plan (index/TOC)"
+    type: cfr
+    format: html
+    url: https://www.nrc.gov/reading-rm/doc-collections/nuregs/staff/sr0800/index
+    mirrors:
+      - https://www.nrc.gov/docs/ML0905/ML090580432.pdf
+      - https://downloads.regulations.gov/NRC-2023-0181-0002/content.pdf
+    filename: nureg-0800_index.html

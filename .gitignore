@@ -1,0 +1,63 @@
+# --- Python / tooling
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pkl
+*.egg-info/
+.ipynb_checkpoints/
+.venv/
+venv/
+.env
+.DS_Store
+
+# --- Streamlit & app state
+.streamlit/
+**/.streamlit/cache/
+**/.streamlit/secrets.toml
+
+# --- Local IDE
+.vscode/
+.idea/
+
+# --- Build / dist
+build/
+dist/
+*.egg
+.eggs/
+
+# --- Project artifacts we do NOT want in Git
+# Base models and any merged or adapter checkpoints can be tens of GB. Keep them out of Git.
+base_files/models/**
+
+# Keep the helper script to (re)download models:
+!base_files/models/get_model_git.sh
+
+# Hugging Face / training outputs
+base_files/model/checkpoints/**
+base_files/model/merged/**
+base_files/model/exports/**
+base_files/model/training_args.bin
+base_files/model/last_response.json
+model/last_response.json
+
+# RAG corpus artifacts (rebuildable)
+base_files/corpus/index/**
+base_files/corpus/chunks/**
+base_files/corpus/parsed/**
+
+# Optional: if your raw sources are large, ignore them too.
+# (You can LFS-track PDFs instead; see .gitattributes below.)
+# Comment these out if you really want to version raw sources.
+base_files/corpus/raw/**
+
+# If you keep supervision/generated data locally, ignore large logs
+base_files/supervision/logs/**
+
+# Caches
+**/.cache/
+**/.mypy_cache/
+**/.ruff_cache/
+
+# OS
+Thumbs.db

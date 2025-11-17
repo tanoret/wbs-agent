@@ -1,0 +1,30 @@
+# Text defaults
+*.py text eol=lf
+*.md text eol=lf
+*.yaml text eol=lf
+*.yml text eol=lf
+*.json text eol=lf
+*.toml text eol=lf
+*.txt text eol=lf
+*.sh text eol=lf
+
+# Use LFS for moderate binary docs (kept small enough for GitHub LFS quotas)
+*.pdf filter=lfs diff=lfs merge=lfs -text
+*.png filter=lfs diff=lfs merge=lfs -text
+*.jpg filter=lfs diff=lfs merge=lfs -text
+*.jpeg filter=lfs diff=lfs merge=lfs -text
+*.gif filter=lfs diff=lfs merge=lfs -text
+*.svg filter=lfs diff=lfs merge=lfs -text
+
+# If you decide to version indices or embeddings (not recommended),
+# uncomment these lines – but be mindful of GitHub LFS quotas.
+#*.faiss filter=lfs diff=lfs merge=lfs -text
+#*.npz   filter=lfs diff=lfs merge=lfs -text
+#*.npy   filter=lfs diff=lfs merge=lfs -text
+#*.joblib filter=lfs diff=lfs merge=lfs -text
+#*.onnx  filter=lfs diff=lfs merge=lfs -text
+
+# DO NOT LFS TRACK huge model shards (we ignore them in .gitignore anyway)
+#*.safetensors filter=lfs diff=lfs merge=lfs -text
+#*.bin         filter=lfs diff=lfs merge=lfs -text
+#*.pt          filter=lfs diff=lfs merge=lfs -text

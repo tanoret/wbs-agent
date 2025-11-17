@@ -1,0 +1,21 @@
+# Keyword/discipline -> weak-label docs (must match your manifest IDs)
+mappings:
+  seismic:
+    docs:
+      - cfr-10-50-app-s
+      - rg-1-29-rev6
+  qa:
+    docs:
+      - cfr-10-50-app-b
+      - rg-1-28-rev6
+  core_physics:
+    docs:
+      - nureg-0800-index   # Recommend adding SRP Chapter 4 sections later for richer citations
+  ep:
+    docs:
+      - cfr-10-50-47
+      # - cfr-10-50-app-e   # (optional) add Appendix E to your manifest and chunks for even better coverage
+  cybersecurity:
+    docs:
+      - cfr-10-73-54
+      - rg-5-71-rev1

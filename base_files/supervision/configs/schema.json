@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "WBS",
+  "type": "object",
+  "required": ["wbs_id","title","scope","discipline","tasks","traceability"],
+  "properties": {
+    "wbs_id": {"type":"string"},
+    "title": {"type":"string"},
+    "scope": {"type":"string"},
+    "assumptions": {"type":"array","items":{"type":"string"}},
+    "discipline": {"type":"string"},
+    "tasks": {
+      "type":"array",
+      "items": {
+        "type":"object",
+        "required":["id","name","description","deliverables","acceptance_criteria","citations"],
+        "properties":{
+          "id":{"type":"string"},
+          "name":{"type":"string"},
+          "description":{"type":"string"},
+          "inputs":{"type":"array","items":{"type":"string"}},
+          "methods":{"type":"array","items":{"type":"string"}},
+          "deliverables":{"type":"array","items":{"type":"string"}},
+          "acceptance_criteria":{"type":"array","items":{"type":"string"}},
+          "citations":{
+            "type":"array",
+            "items":{
+              "type":"object",
+              "required":["doc_id","chunk_no"],
+              "properties":{
+                "doc_id":{"type":"string"},
+                "chunk_no":{"type":"integer"},
+                "source_url":{"type":"string"},
+                "title":{"type":"string"},
+                "snippet":{"type":"string"}
+              }
+            }
+          }
+        }
+      }
+    },
+    "traceability": {
+      "type":"object",
+      "properties":{
+        "regulatory_basis":{"type":"array","items":{"type":"string"}},
+        "references":{"type":"array"}
+      }
+    },
+    "standards_map": {"type":"array","items":{"type":"string"}}
+  }
+}
